@@ -1,0 +1,26 @@
+@import url(./blocks/normalize.css);
+@import url(./blocks/header.css);
+@import url(./blocks/slider.css);
+@import url(./blocks/products.css);
+@import url(./blocks/equipment.css);
+@import url(./blocks/otherequipment.css);
+@import url(./blocks/services.css);
+@import url(./blocks/news.css);
+@import url(./blocks/connect.css);
+@import url(./blocks/footer.css);
+
+
+@font-face {
+	font-family: 'Montserrat'; 
+	src: url(fonts/Montserrat/Montserrat-Light.ttf);
+}
+ 
+/* Жирный */
+@font-face {
+	font-family: 'Montserrat-Bold'; 
+	src: url(fonts/Montserrat/Montserrat-Bold.ttf); 
+}
+
+body{
+    font-family: 'Montserrat';
+}

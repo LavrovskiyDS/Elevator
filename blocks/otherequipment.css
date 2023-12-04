@@ -1,0 +1,111 @@
+/*----------------------------------------------------------*/
+.otherequipment__title{
+    color: #222;
+    font-family: 'Montserrat-Bold';
+    font-size: 40px;
+    padding-bottom: 48px;
+    margin-top: 75px;
+}
+
+.otherequipment__card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.otherequipment__card svg{
+    position: absolute;
+    bottom: 36px;
+    left: 29px;
+}
+
+.otherequipment__card-title{
+    padding: 27px 0px 0px 27px;
+    color: #FFF;
+    font-family: 'Montserrat-Bold';
+    font-size: 22px;
+}
+.otherequipment__card-one{
+    width: 630px;
+    height: 240px;
+    background-image: linear-gradient(to top, rgba(2, 7, 31, 0.3), rgba(2, 7, 31, 0.3)),
+    url('../img/Rectangle 190.png');
+    position: relative;
+    margin-right: 30px;
+}
+
+.otherequipment__card-two{
+    width: 630px;
+    height: 240px;
+    background-image: linear-gradient(to top, rgba(2, 7, 31, 0.3), rgba(2, 7, 31, 0.3)),
+    url('../img/Rectangle 192.png');
+    position: relative;
+}
+
+.otherequipment__text{
+    font-size: 18px;
+    line-height: 30px;
+    margin: 62px 0 39px 0;
+}
+
+@media (max-width:1290px)  {
+    .otherequipment{
+        padding: 0 40px;
+    }
+    .otherequipment__title{
+        font-size: 30px;
+    }
+    .otherequipment__card-title{
+        font-size: 16px;
+    }
+    .otherequipment__card-one{
+        background-position: center;
+    }
+    .otherequipment__card-one{
+        background-position: center;
+    }
+    
+}
+
+@media (max-width:767px)  {
+    .otherequipment{
+        padding: 0 20px;
+    }
+    .otherequipment__title{
+        font-size: 24px;
+        text-align: center;
+    }
+    .otherequipment__text{
+        font-size: 14px;
+        line-height: 171.5%;
+    }
+    .otherequipment__card-one{
+        width: 334px;
+        height: 127px;
+        background-position: center;
+    }
+    .otherequipment__card-two{
+        width: 334px;
+        height: 127px;
+        background-position: center;
+    }
+}
+
+
+@media (max-width:670px)  {
+    .otherequipment__card{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        row-gap: 20px;
+    }
+    .otherequipment__card-one{
+        width: 300px;
+        height: 114px;
+        background-position: center;
+    }
+    .otherequipment__card-two{
+        width: 300px;
+        height: 114px;
+        background-position: center;
+
+    }
+}

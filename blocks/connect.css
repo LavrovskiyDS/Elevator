@@ -1,0 +1,144 @@
+/*----------------------------------------------------------*/
+.connect{
+    background-color: #7F9D64;
+}
+
+.connect__form{
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 75px 0;
+}
+.connect__name{
+    grid-area: Name;
+    color:#FFF;
+    padding: 13px 19px;
+    background-color: #7F9D64;
+    border: 1px solid #e7e7e7;
+}
+.connect__number{
+    grid-area: Number;
+    color:#FFF;
+    padding: 13px 19px;
+    background-color: #7F9D64;
+    border: 1px solid #e7e7e7;
+}
+.connect__mail{
+    grid-area: Mail;
+    color:#FFF;
+    padding: 13px 19px;
+    background-color: #7F9D64;
+    border: 1px solid #e7e7e7;
+}
+.connect__form-request{
+    grid-area: Text;
+    box-sizing: border-box;
+    color:#FFF;
+    width: 100%;
+    padding: 13px 19px;
+    height: 143px;
+    background-color: #7F9D64;
+    border: 1px solid #e7e7e7;
+    resize: none;
+}
+
+.connect__name::-webkit-input-placeholder {color:#FFF;}
+.connect__name:-moz-placeholder {color:#FFF;}
+.connect__number::-webkit-input-placeholder {color:#FFF;}
+.connect__number:-moz-placeholder {color:#FFF;}
+.connect__mail::-webkit-input-placeholder {color:#FFF;}
+.connect__mail:-moz-placeholder {color:#FFF;}
+.connect__form-request::-webkit-input-placeholder {color:#FFF;}
+.connect__form-request:-moz-placeholder {color:#FFF;}
+
+.connect__form-title{
+    font-family: 'Montserrat-Bold';
+    font-size: 40px;
+    line-height: 122%;
+    color: white;
+    text-align: center;
+    padding-bottom:52px;
+}
+
+.connect__form-subtitle{
+    color: #FFF;
+    line-height: 24px; 
+    text-align: center;
+    padding:24px 0 44px 0;
+}
+
+.connect__button{
+    color: #69A54D;
+    font-family: 'Montserrat-Bold';
+    border: 1px solid #69A54D;
+    border-radius: 5px;
+    padding: 12px 76px;
+    line-height: 24px;
+    display: block;
+    margin: 0 auto;
+}
+
+.connect__form-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    row-gap: 30px;
+    column-gap: 30px;
+    grid-template-areas: 
+        ' Name   Number   Mail '
+        ' Text   Text   Text';
+}   
+
+@media (max-width:1290px)  {
+    .connect__form-title{
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .connect__form{
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 75px 40px;
+    }
+    .connect__form-grid{
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        grid-template-areas: 
+            ' Name      Text '
+            ' Number   Text'
+            ' Mail    Text';
+    }   
+    .connect__form-request{
+        height: 200px;
+        margin: 0;
+    }
+
+}
+
+@media (max-width:767px)  {    
+    .connect__form{
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 75px 20px;
+    }
+    .connect__form-title{
+        font-size: 24px;
+        line-height: normal;
+    }
+    .connect__form-subtitle{
+        font-size: 14px;
+        line-height: 171.4%; 
+    }
+
+    .connect__form-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(271px, 1fr));
+        row-gap: 20px;
+        column-gap: 20px; 
+        grid-template-areas: 
+        ' Name '
+        ' Number '
+        ' Mail '
+        ' Text';
+    }   
+    .connect__form-request{
+        height: 105px;
+    }
+}

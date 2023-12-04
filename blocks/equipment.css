@@ -1,0 +1,137 @@
+/*----------------------------------------------------------*/
+.equipment__title{
+    color: #222;
+    font-family: 'Montserrat-Bold';
+    font-size: 40px;
+    padding-bottom: 48px;
+}
+
+.equipment__cardtitle{
+    padding: 23px 0px 0px 23px;
+    color: #FFF;
+    font-family: 'Montserrat-Bold';
+    font-size: 22px;
+}
+
+.equipment__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    row-gap: 31px;
+    column-gap: 30px;
+}
+
+.equipment__grid svg{
+    position: absolute;
+    bottom: 35px;
+    left: 29px;
+}
+
+.equipment__one{
+    height: 240px;
+    background-image: linear-gradient(to top, rgba(2, 7, 31, 0.3), rgba(2, 7, 31, 0.3)),
+    url('../img/head/Rectangle 145.png');
+    position: relative;
+}
+
+.equipment__two{
+    height: 240px;
+    background-image: linear-gradient(to top, rgba(2, 7, 31, 0.3), rgba(2, 7, 31, 0.3)),
+    url('../img/head/Rectangle 147.png');
+    position: relative;
+}
+
+.equipment__three{
+    height: 240px;
+    background-image: linear-gradient(to top, rgba(2, 7, 31, 0.3), rgba(2, 7, 31, 0.3)),
+    url('../img/head/Rectangle 149.png');
+    position: relative;
+}
+
+.equipment__four{
+    height: 240px;
+    background-image: linear-gradient(to top, rgba(2, 7, 31, 0.3), rgba(2, 7, 31, 0.3)),
+    url('../img/head/Rectangle 151.png');
+    position: relative;
+}
+
+.equipment__five{
+    height: 240px;
+    background-image: linear-gradient(to top, rgba(2, 7, 31, 0.3), rgba(2, 7, 31, 0.3)),
+    url('../img/head/Rectangle 153.png');
+    position: relative;
+}
+
+.equipment__six{
+    height: 240px;
+    background-image: linear-gradient(to top, rgba(2, 7, 31, 0.3), rgba(2, 7, 31, 0.3)),
+    url('../img/head/Rectangle 155.png');
+    position: relative;
+}
+
+.equipment__seven{
+    height: 240px;
+    background-image: linear-gradient(to top, rgba(2, 7, 31, 0.3), rgba(2, 7, 31, 0.3)),
+    url('../img/head/Rectangle 159.png');
+    position: relative;
+}
+
+.equipment__eight{
+    height: 240px;
+    background-image: linear-gradient(to top, rgba(2, 7, 31, 0.3), rgba(2, 7, 31, 0.3)),
+    url('../img/head/Rectangle 157.png');
+    position: relative;
+}
+
+.equipment__nine{
+    height: 240px;
+    background-image: linear-gradient(to top, rgba(2, 7, 31, 0.3), rgba(2, 7, 31, 0.3)),
+    url('../img/head/Rectangle 161.png');
+    position: relative;
+}
+
+.equipment__ten{
+    height: 240px;
+    background-image: linear-gradient(to top, rgba(2, 7, 31, 0.3), rgba(2, 7, 31, 0.3)),
+    url('../img/head/Rectangle 162.png');
+    position: relative;
+}
+
+.equipment__eleven{
+    height: 240px;
+    background-image: linear-gradient(to top, rgba(2, 7, 31, 0.3), rgba(2, 7, 31, 0.3)),
+    url('../img/head/Rectangle 165.png');
+    position: relative;
+}
+
+.equipment__twelve{
+    height: 240px;
+    background-image: linear-gradient(to top, rgba(2, 7, 31, 0.3), rgba(2, 7, 31, 0.3)),
+    url('../img/head/Rectangle 166.png');
+    position: relative;
+}
+
+
+@media (max-width:1290px) {
+    .equipment{
+        padding: 0 40px;
+    }
+    .equipment__title{
+        font-size:30px;
+    }
+    .equipment__cardtitle{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:767px) {
+    .equipment{
+        padding: 0 20px;
+    }
+    .equipment__title{
+        font-size: 24px;
+        text-align: center;
+    }
+    .equipment__cardtitle{
+        font-size: 15px;
+    }
+}

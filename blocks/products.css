@@ -1,0 +1,124 @@
+/*----------------------------------------------------------*/
+
+.content{
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.products{
+    margin: 68px 0;
+}
+
+.products__title{
+    font-family: 'Montserrat-Bold';
+    color: #222;
+    font-size: 48px;
+}
+
+.products__subtitle{
+    font-family: 'Montserrat';
+    color: #222;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 39px 0;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+    gap: 20px;
+    align-items: center;
+}
+
+.card__title{
+    color: #CDBD84;
+    font-family: 'Montserrat-Bold';
+    font-size: 80px;
+}
+
+.card__title span{
+    font-size: 24px;
+}
+
+.cards__subtitle{
+    color: #222;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 13px 0px;
+}
+
+@media (max-width:1290px) {
+    .content{
+        margin: 0 auto;
+    }
+    .products__title {
+        font-size: 38px;
+    }
+    .products__subtitle {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .products{
+        padding: 0 40px;
+    }
+    .card__title{
+        color: #CDBD84;
+        font-family: 'Montserrat-Bold';
+        font-size: 72px;
+    }
+    .cards__subtitle{
+        font-size: 16px;
+        line-height: 26px;
+        margin: 13px 0px;
+    }
+}
+
+@media (max-width:767px) {
+    .content{
+        margin: 0 auto;
+    }
+    .products__title {
+        text-align: center;
+        font-size: 26px;
+    }
+    .products__subtitle {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .products{
+        padding: 0 20px;
+    }
+    .card__title span{
+        font-size: 20px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+        gap: 20px;
+    }
+    .card__title{
+        color: #CDBD84;
+        font-family: 'Montserrat-Bold';
+        font-size: 48px;
+    }
+    .card__subtitle{
+        font-size: 14px;
+        line-height: 171.429%;
+        margin: 13px 0px;
+    }
+}
+
+@media (max-width:489px) {
+    .card{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        gap: 17px;
+    }
+    .card__title span{
+        font-size: 18px;
+    }
+    .card__title{
+        text-align: end;
+    }
+}
