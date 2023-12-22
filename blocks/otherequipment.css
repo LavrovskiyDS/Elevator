@@ -1,11 +1,4 @@
 /*----------------------------------------------------------*/
-.otherequipment__title{
-    color: #222;
-    font-family: 'Montserrat-Bold';
-    font-size: 40px;
-    padding-bottom: 48px;
-    margin-top: 75px;
-}
 
 .otherequipment__card{
     display: flex;
@@ -14,31 +7,23 @@
 
 .otherequipment__card svg{
     position: absolute;
+    z-index: 4;
     bottom: 36px;
     left: 29px;
 }
 
 .otherequipment__card-title{
+    position: relative;
+    z-index: 5;
     padding: 27px 0px 0px 27px;
     color: #FFF;
-    font-family: 'Montserrat-Bold';
     font-size: 22px;
+    font-weight: 800;
 }
-.otherequipment__card-one{
-    width: 630px;
+.otherequipment__card-item{
     height: 240px;
-    background-image: linear-gradient(to top, rgba(2, 7, 31, 0.3), rgba(2, 7, 31, 0.3)),
-    url('../img/Rectangle 190.png');
     position: relative;
-    margin-right: 30px;
-}
-
-.otherequipment__card-two{
-    width: 630px;
-    height: 240px;
-    background-image: linear-gradient(to top, rgba(2, 7, 31, 0.3), rgba(2, 7, 31, 0.3)),
-    url('../img/Rectangle 192.png');
-    position: relative;
+    background: #222;
 }
 
 .otherequipment__text{
@@ -47,8 +32,13 @@
     margin: 62px 0 39px 0;
 }
 
+.otherequipment__card-image{
+    margin-top: -50px;
+    opacity: 0.6;
+}
+
 @media (max-width:1290px)  {
-    .otherequipment{
+    .b-otherequipment{
         padding: 0 40px;
     }
     .otherequipment__title{
@@ -57,17 +47,20 @@
     .otherequipment__card-title{
         font-size: 16px;
     }
-    .otherequipment__card-one{
+    .otherequipment__card-item{
         background-position: center;
+        height: auto;
     }
-    .otherequipment__card-one{
-        background-position: center;
+    .otherequipment__card-image{
+        max-width: 630px; 
+        width: 100%;
+        object-fit: cover; 
+        object-position: center; 
     }
-    
 }
 
 @media (max-width:767px)  {
-    .otherequipment{
+    .b-otherequipment{
         padding: 0 20px;
     }
     .otherequipment__title{
@@ -78,16 +71,12 @@
         font-size: 14px;
         line-height: 171.5%;
     }
-    .otherequipment__card-one{
+    .otherequipment__card-item{
         width: 334px;
         height: 127px;
         background-position: center;
     }
-    .otherequipment__card-two{
-        width: 334px;
-        height: 127px;
-        background-position: center;
-    }
+
 }
 
 

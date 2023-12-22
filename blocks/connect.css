@@ -1,5 +1,5 @@
 /*----------------------------------------------------------*/
-.connect{
+.b-connect{
     background-color: #7F9D64;
 }
 
@@ -51,8 +51,8 @@
 .connect__form-request:-moz-placeholder {color:#FFF;}
 
 .connect__form-title{
-    font-family: 'Montserrat-Bold';
     font-size: 40px;
+    font-weight: 700;
     line-height: 122%;
     color: white;
     text-align: center;
@@ -68,14 +68,20 @@
 
 .connect__button{
     color: #69A54D;
-    font-family: 'Montserrat-Bold';
     border: 1px solid #69A54D;
     border-radius: 5px;
     padding: 12px 76px;
     line-height: 24px;
+    font-weight: 600;
     display: block;
     margin: 0 auto;
 }
+
+.connect__button:hover{
+    transition: .3s ;
+    background-color: #c7c7c7;
+}
+
 
 .connect__form-grid{
     display: grid;

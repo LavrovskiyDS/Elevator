@@ -1,81 +1,170 @@
-/*----------------------------------------------------------*/
-.slider{
+/*----------------------
+.b-swiper{
     object-fit: cover;
     background-image: url("../img/Group 95.jpg");
     background-repeat: no-repeat;
     min-height: 792px;
     background-position: center;
+}------------------------------------*/
+
+
+/*-----------Верстка меню-----------*/
+.swiper__menu{
+    position: relative;
+    z-index: 2;
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 19px 0px 0 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.swiper__menu-links{
+    display: flex;
+    justify-content: flex-start;
+}
+.swiper__link{
+    padding: 17px 25px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+.swiper__link:hover{
+    background: rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+/*---------------------------------*/
+
+
+/*-----------Верстка Заголовков-----------*/
+.swiper__text-title{
+    font-size: 108px;
+    text-align: center;
+    font-weight: 800;
+    color: white;
+    opacity: 70%;
+    margin: 220px 0 26px 0;
 }
 
-.slider__container{
+.swiper__text-subtitle{
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 310px 0;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+/*---------------------------------*/
+
+.swiper__image{
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    max-width: 4096px;
+    height: 100%;
+    min-height: 792px;
+    margin: -50px 0 0 0;
+    object-fit: cover;
+    object-position: center; 
+}
+
+
+/*-----------Верстка кнопок слайдера-----------*/
+.swiper__navigation{
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.swiper__button{
+    position: relative;
+    display: block;
+    bottom: 85px;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    position: absolute;
+    width: 62px;
+    height: 40px;
+    left: 385px;
+    opacity: 0.6;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+    position: absolute;
+    width: 62px;
+    height: 40px;
+    left: 315px;
+    opacity: 0.6;
+}
+.swiper__navigation{
+    position: relative;
+    bottom: 70px;
     max-width: 1290px;
     margin: 0 auto;
 }
-.slider__menu{
-    padding: 19px 15px 0 15px;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Montserrat-Bold';
-}
 
-.slider__menu-links{
-    width: 838px;
-    display: flex;
-    justify-content: space-between;
+.swiper__line{
+    max-width: 1014px;
+    width: 100%;
+    margin: 0 150px;
+    border-bottom: 1px solid #FFF;
+    opacity: 0.6;
 }
+.swiper__number{
+    margin-top: -80px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 96px;
+    font-weight: 700;
+}
+/*------------------------------------*/
 
-.slider-link{
-    color: #FFF;
-    text-decoration: none;
-}
-
-.slider-link:hover{
-    color: #69A54D;
-    text-decoration: none;
-    transition: 0.2s;
-}
-
-.slider__text-title{
-    font-family: 'Montserrat-Bold';
-    font-size: calc(16px + 92 * (100vw / 1920));
-    text-align: center;
-    color: white;
-    opacity: 70%;
-    margin: 262px 0 26px 0;
-}
-
-.slider__text-subtitle{
-    font-family: 'Montserrat-Bold';
-    font-size: calc(16px + 13 * (100vw / 1920));
-    text-align: center;
-    color: white;
-}
 
 @media (max-width:1290px) {
-    .slider__menu-links{
+    .swiper__menu-links{
         display: none;
     }
-    .slider__menu{
+    .swiper__menu{
         justify-content: flex-end;
     }
-    .slider{
+    .swiper{
         background-position: center;
     }
-    .slider__text-title{
+    .swiper__text-title{
         font-size: 57px;
     }
-    
-    .slider__text-subtitle{
+    .swiper__text-subtitle{
         font-size: 20px;
+    }
+
+    .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        position: absolute;
+        width: 62px;
+        height: 40px;
+        left: 70px;
+        opacity: 0.6;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        position: absolute;
+        width: 62px;
+        height: 40px;
+        left: 0px;
+        opacity: 0.6;
     }
 }
 
 @media (max-width:767px) {
-    .slider__text-title{
+    .swiper__text-title{
         font-size: 25px;
     }
     
-    .slider__text-subtitle{
+    .swiper__text-subtitle{
         font-size: 15px;
+    }
+
+    .swiper__image{
+        height: 100%;
+        max-height: 792px;
+        margin: -50px 0 0 0;
     }
 }

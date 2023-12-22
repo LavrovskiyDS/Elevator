@@ -1,5 +1,5 @@
 /*----------------------------------------------------------*/
-.footer{
+.b-footer{
     background: rgba(232, 222, 186, 0.28);
 }
 
@@ -13,9 +13,7 @@
 }
 
 .footer__info-link{
-    text-decoration: none;
     color: #222;
-    font-size: 16px;
     line-height: 30px;
 }
 
@@ -34,12 +32,11 @@
 }
 
 .footer__contact{
-    color: #222;
-    font-size: 16px;
     line-height: 24px;
 }
 
 .footer__canape{
+    background-color: #FFF;
     max-width: 1290px;
     margin: 0 auto;
     display: grid;
@@ -49,8 +46,6 @@
 
 .footer__title{
     margin: 40px 0px;
-    color: #222;
-    font-size: 16px;
     line-height: 30px;
 } 
 
@@ -84,6 +79,7 @@
 
 @media (max-width:767px)  {
     .footer__canape{
+
         margin:35px 0;
         display: block;
         text-align: center;
