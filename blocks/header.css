@@ -1,6 +1,7 @@
 
 .b-header{
     max-width: 1290px;
+    width: 100%;
     margin: 0 auto;
     padding: 15px 0;
     display: flex;
@@ -9,7 +10,11 @@
     justify-content: space-between;
 }
 
-.header__burger{
+.b-sandwich{
+    display: none;
+}
+
+.header__icon{
     display: none;
     padding: 15px;
 }
@@ -59,16 +64,25 @@
     color: #222;
 }
 
-.header__language-number{
+.header__number{
     font-weight: 600;
     font-size: 20px;
+}
+
+.header__number a{
+    color: #222;
+}
+
+.header__number a:hover{
+    transition: 0.2s ease-in-out;
+    color: #69A54D;
 }
 
 @media (max-width:1290px) {
     .b-header{
         max-width: 767px;
     }
-    .header__burger{
+    .header__icon{
         display: inline-block;
     }
     .header__email{
@@ -93,10 +107,11 @@
     .header__links-link{
         display: none;
     }
-    .header__language-number{
+    .header__number{
         display: none;
     }
     .header__language-selector{
         display: inline;
+        text-align: start;
     }
 }

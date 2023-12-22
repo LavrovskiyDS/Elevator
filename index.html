@@ -10,13 +10,31 @@
 </head>
     
 <body>
-    <div class="b-header">
-        <svg class="header__burger" xmlns="http://www.w3.org/2000/svg" width="28" height="23" viewBox="0 0 28 23" fill="none">
-            <rect width="28" height="3" fill="#69A54D"/>
-            <rect y="10" width="28" height="3" fill="#69A54D"/>
-            <rect y="20" width="28" height="3" fill="#69A54D"/>
-        </svg>
-        <img class="header__image" src=".\img\logo-728230619 2.png" alt="">
+    <div class="b-sandwich">
+        <div class="close"></div>
+        <ul class="sandwich__menu">
+            <li><a class="sandwich__link" href="\">О компании</a></li>
+            <li><a class="sandwich__link" href="\">Вакансии</a></li>
+            <li><a class="sandwich__link" href="\">Новости</a></li>
+            <li><a class="sandwich__link" href="\">Контакты</a></li>
+        </ul>
+        <p class="sandwich__number"><a  href="tel:8(86138) 6-34-03">8(86138) 6-34-03</a>,<a href="tel:8(86138) 6-34-03">6-34-06</a></p>
+        <a class="sandwich__email" href="mailto:sale@semm.ru">sale@semm.ru</a>
+        <div class="sandwich__text">
+            пн-пт 8:00-17:00, <br>
+            перерыв 12:00-13:00, <br>
+            сб-вс: выходной
+        </div>
+    </div> 
+
+
+        <div class="b-header">
+            <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="23" viewBox="0 0 28 23" fill="none">
+                <rect width="28" height="3" fill="#69A54D"/>
+                <rect y="10" width="28" height="3" fill="#69A54D"/>
+                <rect y="20" width="28" height="3" fill="#69A54D"/>
+            </svg>
+        <img class="header__image" src="./img/logo-EMM.png" alt="">
         <div class="header__menu">
             <ul class="header__links-link">
                 <li><a href="\">О компании</a></li>
@@ -28,7 +46,7 @@
                 <li>пн-пт 8:00-17:00, перерыв 12:00-13:00, сб-вс: выходной</li>
             </ul>
         </div>
-        <a href="mailto:sale@semm.ru"><p class="header__email">sale@semm.ru</p></a>
+        <p><a class="header__email" href="mailto:sale@semm.ru">sale@semm.ru</p></a>
         <div class="header__language">
             <div class="header__language-selector">
                 <a class="header__language-RU" href="">RU</a>
@@ -43,7 +61,7 @@
                     </svg>
                 </p>
             </div>
-            <p class="header__language-number">8(86138) 6-34-03, 6-34-06</p> <!-- Правильное оформление телефонов сделать  -->
+            <p class="header__number"><a href="tel:8(86138) 6-34-03">8(86138) 6-34-03</a>, <a href="tel:8(86138) 6-34-03">6-34-06</a></p>
         </div>
     </div>
 
@@ -69,7 +87,6 @@
                 </svg>
             </div>
         </div>
-        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img class="swiper__image" src="./img/slide12.jpg" alt="">
@@ -107,11 +124,10 @@
                 <rect width="27.7894" height="0.992478" transform="matrix(-0.712466 0.701706 0.712466 0.701706 61.293 18.8036)" fill="white"/>
             </svg>
         </div>
-
     </div>
 
 
-    <section class="b-content">
+    <div class="b-content">
         <div class="b-products">
             <h2 class="b-title">Продукция для аграрной промышленности</h2>
             <p class="products__subtitle">АО "Элеватормельмаш" г. Кропоткин на протяжении 75 лет является крупнейшим поставщиком продукции для агропромышленного комплекса России и ближнего зарубежья.
@@ -323,65 +339,56 @@
             </div>
         </div>
 
-        <div class="news__swiper">
-            <h2 class="b-title">Новости компании</h2>
-            <div class="news-wrapper">
-                <div class="news-slide">
-                    <img class="news__img" src="./img/news 1.jpg" alt="">
-                    <h3 class="news__subtitle">Запасные части для пробоотборника</h3>
-                    <h3 class="news__date">14.10.2020</h3>
-                    <p class="news__text">Заводом Элеватормельмаш (ЭММ) изготовлены и подготовлены к отгрузке запасные отборники для пробоотборника типа У1-УПП для Заказчика из Саратовской области. </p></div>
-                <div class="news-slide">
-                    <img class="news__img" src="./img/news 2.jpg" alt="">
-                    <h3 class="news__subtitle">Фузоловушка для расширения производства</h3>
-                    <h3 class="news__date">14.10.2020</h3>
-                    <p class="news__text">Для увеличения объемов выпускаемой продукции и в целях модернизации производства для одного из маслобойных предприятий республики Башкортостан завод Элеватормельмаш изготовил и отгрузил очередную машину типа МФС.</p>
-                </div>
-                <div class="news-slide">
-                    <img class="news__img" src="./img/news 3.jpg" alt="">
-                    <h3 class="news__subtitle">Произведена мультимодальная отгрузка котлов</h3>
-                    <h3 class="news__date">14.10.2020</h3>
-                    <p class="news__text">Мы произвели и отгрузили очередную партию промышленных котлов. Данная отгрузка была необчной, а мультимодальная (авто-, ж.д. контейнер, морской паром). </p>
-                </div>
-            </div>
+        <div class="swiper news-swiper">
             <div class="news__button">
-                <svg class="news-button-prev" xmlns="http://www.w3.org/2000/svg" width="62" height="39" viewBox="0 0 62 39" fill="none">
-                    <rect x="1" y="19.0001" width="61" height="1" fill="white"/>
-                    <rect width="27.7894" height="0.992478" transform="matrix(0.712466 -0.701706 0.712466 0.701706 0 19.5)" fill="white"/>
-                    <rect width="27.7894" height="0.992478" transform="matrix(0.712466 0.701706 -0.712466 0.701706 0.707031 18.8036)" fill="white"/>
+                <svg class="news-swiper-button-prev" xmlns="http://www.w3.org/2000/svg" width="62" height="39" viewBox="0 0 62 39" fill="none">
+                    <rect x="1" y="19" width="61" height="1" fill="#69A54D"/>
+                    <rect width="27.7894" height="0.992478" transform="matrix(0.712466 -0.701706 0.712466 0.701706 0 19.5)" fill="#69A54D"/>
+                    <rect width="27.7894" height="0.992478" transform="matrix(0.712466 0.701706 -0.712466 0.701706 0.707031 18.8037)" fill="#69A54D"/>
                 </svg>
-                <svg class="news-button-next" xmlns="http://www.w3.org/2000/svg" width="62" height="39" viewBox="0 0 62 39" fill="none">
-                    <rect width="61" height="1" transform="matrix(-1 0 0 1 61 19.0001)" fill="white"/>
-                    <rect width="27.7894" height="0.992478" transform="matrix(-0.712466 -0.701706 -0.712466 0.701706 62 19.5)" fill="white"/>
-                    <rect width="27.7894" height="0.992478" transform="matrix(-0.712466 0.701706 0.712466 0.701706 61.293 18.8036)" fill="white"/>
+                <svg class="news-swiper-button-next" xmlns="http://www.w3.org/2000/svg" width="62" height="39" viewBox="0 0 62 39" fill="none">
+                    <rect width="61" height="1" transform="matrix(-1 0 0 1 61 19)" fill="#69A54D"/>
+                    <rect width="27.7894" height="0.992478" transform="matrix(-0.712466 -0.701706 -0.712466 0.701706 62 19.5)" fill="#69A54D"/>
+                    <rect width="27.7894" height="0.992478" transform="matrix(-0.712466 0.701706 0.712466 0.701706 61.293 18.8037)" fill="#69A54D"/>
                 </svg>
             </div>
-
-<!--           
-            <div class="news__grid">
-                <div class="news__item">
+            <h2 class="b-title">Новости компании</h2>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <img class="news__img" src="./img/news 1.jpg" alt="">
                     <h3 class="news__subtitle">Запасные части для пробоотборника</h3>
                     <h3 class="news__date">14.10.2020</h3>
                     <p class="news__text">Заводом Элеватормельмаш (ЭММ) изготовлены и подготовлены к отгрузке запасные отборники для пробоотборника типа У1-УПП для Заказчика из Саратовской области. </p>
                 </div>
-                <div class="news__item">
+                <div class="swiper-slide">
                     <img class="news__img" src="./img/news 2.jpg" alt="">
                     <h3 class="news__subtitle">Фузоловушка для расширения производства</h3>
                     <h3 class="news__date">14.10.2020</h3>
                     <p class="news__text">Для увеличения объемов выпускаемой продукции и в целях модернизации производства для одного из маслобойных предприятий республики Башкортостан завод Элеватормельмаш изготовил и отгрузил очередную машину типа МФС.</p>
                 </div>
-                <div class="news__item">
+                <div class="swiper-slide">
                     <img class="news__img" src="./img/news 3.jpg" alt="">
                     <h3 class="news__subtitle">Произведена мультимодальная отгрузка котлов</h3>
                     <h3 class="news__date">14.10.2020</h3>
                     <p class="news__text">Мы произвели и отгрузили очередную партию промышленных котлов. Данная отгрузка была необчной, а мультимодальная (авто-, ж.д. контейнер, морской паром). </p>
                 </div>
-            </div>-->
+                <div class="swiper-slide">
+                    <img class="news__img" src="./img/news 3.jpg" alt="">
+                    <h3 class="news__subtitle">Произведена мультимодальная отгрузка котлов</h3>
+                    <h3 class="news__date">14.10.2020</h3>
+                    <p class="news__text">Мы произвели и отгрузили очередную партию промышленных котлов. Данная отгрузка была необчной, а мультимодальная (авто-, ж.д. контейнер, морской паром). </p>
+                </div>
+                <div class="swiper-slide">
+                    <img class="news__img" src="./img/news 3.jpg" alt="">
+                    <h3 class="news__subtitle">Произведена мультимодальная отгрузка котлов</h3>
+                    <h3 class="news__date">14.10.2020</h3>
+                    <p class="news__text">Мы произвели и отгрузили очередную партию промышленных котлов. Данная отгрузка была необчной, а мультимодальная (авто-, ж.д. контейнер, морской паром). </p>
+                </div>            
+            </div>
         </div>
-    </section>
+    </div>
 
-    <section class="b-connect">
+    <div class="b-connect">
         <div class="connect__form">
             <h2 class="connect__form-title">Свяжитесь с нами</h2>
             <div class="connect__form-grid">
@@ -393,12 +400,12 @@
             <p class="connect__form-subtitle">Нажимая на кнопку вы даете согласие на обработку персональных данных</p>
             <button class ="connect__button" type="button" name="popup-button">Отправить</button>
         </div>
-    </section>
+    </div>
 
     <div class="b-footer">
         <div class="footer__flex">
             <img src="./img/logo-EMM.png" alt="">
-            <ul class="footer__info"> <!--  Списки поменять местами.-->
+            <ul class="footer__info">
                 <li><a class="footer__info-link" href="">О компании</a></li>
                 <li><a class="footer__info-link" href="">Каталог продукции</a></li>
                 <li><a class="footer__info-link" href="">Услуги</a></li>
@@ -441,20 +448,22 @@
                 </div>
                 <div class="footer__contact">
                     <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
-                        <path d="M18.5 6.29004C11.7698 6.29004 6.29004 11.7698 6.29004 18.5C6.29004 25.2302 11.7698 30.71 18.5 30.71C25.2303 30.71 30.71 25.2302 30.71 18.5C30.71 11.7698 25.2303 6.29004 18.5 6.29004ZM18.5 8.51004C24.0305 8.51004 28.49 12.9696 28.49 18.5C28.49 24.0304 24.0305 28.49 18.5 28.49C12.9696 28.49 8.51004 24.0304 8.51004 18.5C8.51004 12.9696 12.9696 8.51004 18.5 8.51004ZM18.5 9.99004C17.887 9.99004 17.39 10.487 17.39 11.1V18.5C17.39 19.1131 17.887 19.61 18.5 19.61H25.16C25.7731 19.61 26.27 19.1131 26.27 18.5C26.27 17.887 25.7731 17.39 25.16 17.39H29.61V11.1C19.61 10.487 19.1131 9.99004 18.5 9.99004Z" fill="#69A54D"/>
+                        <path d="M18.5 6.29004C11.7698 6.29004 6.29004 11.7698 6.29004 18.5C6.29004 25.2302 11.7698 30.71 18.5 30.71C25.2303 30.71 30.71 25.2302 30.71 18.5C30.71 11.7698 25.2303 6.29004 18.5 6.29004ZM18.5 8.51004C24.0305 8.51004 28.49 12.9696 28.49 18.5C28.49 24.0304 24.0305 28.49 18.5 28.49C12.9696 28.49 8.51004 24.0304 8.51004 18.5C8.51004 12.9696 12.9696 8.51004 18.5 8.51004ZM18.5 9.99004C17.887 9.99004 17.39 10.487 17.39 11.1V18.5C17.39 19.1131 17.887 19.61 18.5 19.61H25.16C25.7731 19.61 26.27 19.1131 26.27 18.5C26.27 17.887 25.7731 17.39 25.16 17.39H19.61V11.1C19.61 10.487 19.1131 9.99004 18.5 9.99004Z" fill="#69A54D"/>
                     </svg>
                     <p class="footer__contact-text">Режим работы: пн-пт 8:00-17:00,<br> перерыв 12:00-13:00, сб-вс: выходной</p>
                 </div>
             </div>
         </div>
-        <div class="footer__canape">
-            <p class="footer__title">© АО "Элеватормельмаш"  2014 г.</p>
-            <p class="footer__title">Разработка и маркетинг - WebCanape</p>
-            <p class="footer__title">Политика конфиденциальности</p>
+        <div class="footer__container">
+            <div class="footer__canape">
+                <p class="footer__title">© АО "Элеватормельмаш"  2014 г.</p>
+                <p class="footer__title">Разработка и маркетинг - WebCanape</p>
+                <p class="footer__title">Политика конфиденциальности</p>
+            </div>
         </div> 
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="swiper-bundle.min.js"></script>
     <script src="scriprt.js"></script>
 </body>
 </html>

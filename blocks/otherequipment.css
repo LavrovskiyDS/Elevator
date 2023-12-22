@@ -13,7 +13,7 @@
 }
 
 .otherequipment__card-title{
-    position: relative;
+    position: absolute;
     z-index: 5;
     padding: 27px 0px 0px 27px;
     color: #FFF;
@@ -33,7 +33,6 @@
 }
 
 .otherequipment__card-image{
-    margin-top: -50px;
     opacity: 0.6;
 }
 
@@ -48,14 +47,15 @@
         font-size: 16px;
     }
     .otherequipment__card-item{
-        background-position: center;
         height: auto;
+        max-height: 230px;
     }
     .otherequipment__card-image{
-        max-width: 630px; 
         width: 100%;
         object-fit: cover; 
-        object-position: center; 
+    }
+    .otherequipment__card-item:nth-child(1){
+        margin-right: 20px;
     }
 }
 
@@ -74,7 +74,6 @@
     .otherequipment__card-item{
         width: 334px;
         height: 127px;
-        background-position: center;
     }
 
 }
@@ -86,15 +85,9 @@
         grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
         row-gap: 20px;
     }
-    .otherequipment__card-one{
+    .otherequipment__card-item{
         width: 300px;
         height: 114px;
         background-position: center;
-    }
-    .otherequipment__card-two{
-        width: 300px;
-        height: 114px;
-        background-position: center;
-
     }
 }

@@ -1,26 +1,10 @@
 /*----------------------------------------------------------*/
-.news__swiper{
-    background-color: antiquewhite;
+
+.news__button{
+    display: inline-block;
+    position: absolute;
+    right: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -29,7 +13,7 @@
 
 
 .b-news{
-    padding: 67px 0 100px 0;
+    padding: 67px 0 0 0;
 }
 
 .news__grid{
@@ -38,7 +22,6 @@
     row-gap: 30px;
     column-gap: 30px;
 }
-
 .news__subtitle{
     margin-top: 31px;
     color: #69A54D;
@@ -55,6 +38,10 @@
 .news__text{
     line-height: 24px;
 }
+
+
+
+
 
 @media (max-width:1290px)  {
     .b-news{

@@ -1,0 +1,64 @@
+    .b-sandwich{
+        min-width: 300px;
+        width: 100%;
+        padding: 45px 20px;
+        font-size: 16px;
+        color: #222;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-color: #FFF;
+    }
+
+    .b-sandwich.visible{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 430;
+        display: block;
+    }
+
+    .close {
+        position: absolute; 
+        top: 2%;
+        right: 5%;
+        width: 24px;
+        height: 24px;
+        border-radius: 100px;
+        background:
+        linear-gradient(45deg, transparent calc(50% - 1px), #C4C4C4 calc(50% - 3px), #C4C4C4 calc(50% + 1px), transparent calc(50% + 1px)),
+        linear-gradient(-45deg, transparent calc(50% - 1px), #C4C4C4 calc(50% - 3px), #C4C4C4 calc(50% + 1px), transparent calc(50% + 1px));
+    }
+
+    .sandwich__menu{
+        margin-bottom: 40px;
+    }
+
+    .sandwich__link{
+        display: block;
+        color: #222;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+
+    .sandwich__email{
+        display: block;
+        color: #69A54D;
+        font-weight: 600;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    .sandwich__number{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .sandwich__number a{
+        color: #222;
+    }
+    .sandwich__number a:hover{
+        transition: 0.2s ease-in-out;
+        color: #69A54D;
+    }   

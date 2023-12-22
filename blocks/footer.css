@@ -35,10 +35,14 @@
     line-height: 24px;
 }
 
-.footer__canape{
+.footer__container{
     background-color: #FFF;
-    max-width: 1290px;
+}
+
+.footer__canape{
     margin: 0 auto;
+    max-width: 1290px;
+    width: 100%;
     display: grid;
     grid-template-columns: 360px 314px 304px;
     gap: 120px;

@@ -1,49 +1,40 @@
 /*----------------------------------------------------------*/
-
 .b-content{
     max-width: 1290px;
     margin: 70px auto;
 }
-
 .b-products{
     margin: 68px 0;
 }
-
 .products__title{
     font-size: 48px;
     font-weight: 700;
 }
-
 .products__subtitle{
     font-size: 18px;
     line-height: 30px;
     margin: 39px 0;
 }
-
 .cards__grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
     gap: 20px;
     align-items: center;
 }
-
 .cards__title{
     color: #CDBD84;
     font-size: 80px;
     font-weight: 700;
 }
-
 .cards__title span{
     font-size: 24px;
 }
-
 .cards__subtitle{
     font-size: 18px;
     line-height: 30px;
     margin: 13px 0px;
     text-wrap: balance;
 }
-
 @media (max-width:1290px) {
     .b-title {
         font-size: 38px;

@@ -1,10 +1,5 @@
 /*----------------------
-.b-swiper{
-    object-fit: cover;
-    background-image: url("../img/Group 95.jpg");
-    background-repeat: no-repeat;
-    min-height: 792px;
-    background-position: center;
+
 }------------------------------------*/
 
 
@@ -79,18 +74,15 @@
 }
 .swiper__button{
     position: relative;
-    display: block;
     bottom: 85px;
 }
 .swiper-button-next, .swiper-rtl .swiper-button-prev{
-    position: absolute;
     width: 62px;
     height: 40px;
     left: 385px;
     opacity: 0.6;
 }
 .swiper-button-prev, .swiper-rtl .swiper-button-next{
-    position: absolute;
     width: 62px;
     height: 40px;
     left: 315px;
