@@ -1,6 +1,4 @@
-/*----------------------
 
-}------------------------------------*/
 
 
 /*-----------Верстка меню-----------*/
@@ -79,13 +77,15 @@
 .swiper-button-next, .swiper-rtl .swiper-button-prev{
     width: 62px;
     height: 40px;
-    left: 385px;
+    left: 50%;
+    margin-left: -575px;
     opacity: 0.6;
 }
 .swiper-button-prev, .swiper-rtl .swiper-button-next{
     width: 62px;
     height: 40px;
-    left: 315px;
+    left: 50%;
+    margin-left: -645px;
     opacity: 0.6;
 }
 .swiper__navigation{
@@ -103,6 +103,7 @@
     opacity: 0.6;
 }
 .swiper__number{
+    display: block;
     margin-top: -80px;
     text-align: right;
     color: rgba(255, 255, 255, 0.40);
@@ -127,6 +128,13 @@
     }
     .swiper__text-subtitle{
         font-size: 20px;
+    }
+    .swiper__line{
+        max-width: 900px;
+        width: 100%;
+        margin: 0 150px;
+        border-bottom: 1px solid #FFF;
+        opacity: 0.6;
     }
 
     .swiper-button-next, .swiper-rtl .swiper-button-prev{

@@ -1,4 +1,8 @@
     .b-sandwich{
+        position: absolute;
+        left: 0;
+        transform: translateX(-100%);
+        top: 0;
         min-width: 300px;
         width: 100%;
         padding: 45px 20px;
@@ -8,17 +12,18 @@
         font-weight: 400;
         line-height: normal;
         background-color: #FFF;
-        transition: all 1s ease-in-out;
+        transition: transform 2s ease-in-out;
     }
 
     .b-sandwich.visible{
         position: absolute;
+        display: block;
         width: 50%;
         height: 100%;
+        transform: translateX(0);
         left: 0;
         top: 0;
         z-index: 430;
-        display: block;
     }
 
     .close {
@@ -33,7 +38,7 @@
         linear-gradient(-45deg, transparent calc(50% - 1px), #C4C4C4 calc(50% - 3px), #C4C4C4 calc(50% + 1px), transparent calc(50% + 1px));
     }
 
-    .sandwich__menu{
+    .sandwich__menu {
         margin-bottom: 40px;
     }
 
