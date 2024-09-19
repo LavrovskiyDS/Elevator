@@ -56,11 +56,11 @@
     font-weight: 600;
 }
 
-.header__language-RU{
+.header__language-ru{
     color: #69A54D;
 }
 
-.header__language-EN{
+.header__language-en{
     color: #222;
 }
 
@@ -76,6 +76,7 @@
 .header__number a:hover{
     transition: 0.2s ease-in-out;
     color: #69A54D;
+    grid-template-columns: ;
 }
 
 @media (max-width:1290px) {
